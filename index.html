@@ -1,0 +1,218 @@
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<style>body {
+    font-family: 'Alfa Slab One', cursive;
+    font-size:6rem;
+    background:#020203;;
+  }
+  
+  div {
+    width:1280px;
+    margin: auto;
+    text-align:center;
+    perspective: 800px;
+    position: relative;
+   }
+  
+  span {
+     display:inline-block;
+     margin-left: -20px;
+     color: #C0C0C0;;
+     transform-origin: 50% 70%;
+  }
+  
+  
+  span:nth-child(2n) {
+    color: #C0C0C0;
+  }
+  
+  span:nth-child(1) {
+    animation:
+      flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both,
+      flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards;  
+  }
+  
+  span:nth-child(2) {
+    animation:
+      flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both,
+      flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards;
+  }
+  
+  span:nth-child(3) {
+    animation:
+      flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both,
+      flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards;
+  }
+  
+  span:nth-child(4) {
+    animation:
+      flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .6s both,
+      flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards;
+  }
+  
+  span:nth-child(5) {
+    animation:
+      flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .8s both,
+      flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.8s forwards,
+      dropM 0.25s ease-in 3.5s forwards
+    }
+  
+  
+  @keyframes flipUp {
+    from {transform: rotateX(90deg);}
+    to {tranform: rotateX(0deg);}
+  }
+  
+  @keyframes flipDown {
+    to {
+      transform: rotateX(-180deg);
+    }
+  }
+  
+  @keyframes dropM {
+    from {
+      transform: rotateX(-180deg)
+    }
+    to {
+      transform: translateY(300px) rotateX(0deg);
+    }
+  }
+  
+  svg {
+    animation: growBulb 1s ease-out 3.85s forwards;
+    position: absolute;
+      left: 312px;
+      top: -160px;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  svg path {
+    fill:#680303;
+    transform-origin: 50% 50%;
+    transform: rotate(00deg);
+  }
+  
+  path:nth-child(even) {
+    fill:golden#680303;
+  }
+      
+  path:nth-child(2) {
+    animation: pedalTwo 1.5s ease-in-out 5.2s both;
+  }
+  
+  path:nth-child(3) {
+    animation: pedalThree 1.5s ease-in-out 5.1s both;
+  }
+  
+  path:nth-child(4) {
+    animation: pedalFour 1.5s ease-in-out 5s both;
+  }
+  
+   path:nth-child(5) {
+    animation: pedalFive 1.5s ease-in-out 4.9s both;
+  }
+  
+  path:nth-child(6) {
+    animation: pedalSix 1.5s ease-in-out 4.7s both;
+  }
+  
+  path:nth-child(7) {
+    animation: pedalSeven 1.5s ease-in-out 4.7s both;
+  }
+  
+  path:nth-child(8) {
+    animation: pedalEight 1.5s ease-in-out 4.5s both;
+  }
+  
+  path:nth-child(9) {
+    animation: pedalNine 1.5s ease-in-out 4.5s both;
+  }
+  
+  @keyframes pedalTwo {
+    to {
+      transform: rotate(-25deg);
+    }
+  }
+  
+  @keyframes pedalThree {
+    to {
+      transform: rotate(25deg);    
+    }
+  }
+  
+  @keyframes pedalFour {
+    to {
+      transform: rotate(45deg);    
+    }
+  }
+  
+  @keyframes pedalFive {
+    to {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  @keyframes pedalSix {
+    to {
+      transform: rotate(-60deg);
+    }
+  }
+  
+  @keyframes pedalSeven {
+    to {
+      transform: rotate(60deg);
+    }
+  }
+  
+  @keyframes pedalEight {
+    to {
+      transform: rotate(75deg);    
+    }
+  }
+  
+  @keyframes pedalNine {
+    to {
+      transform: rotate(-75deg);    
+    }
+  }
+  
+  @keyframes growBulb {
+    to {
+      transform: scale(0.35);
+    }
+  }
+  </style>
+
+
+<div> 
+  <span>you are</span>
+  <span>the best</span>
+  <span>teacher</span>
+  <span>in the world</span>
+  <span>Miss UZMA</span>
+
+  <svg version="1.1" id="flower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="1000px" height="1000px" viewBox="0 0 1000 1000" xml:space="preserve">
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+    <path d="M444.138,154.759c0,0-238.928,255.172,0,375.862C684.655,410.793,444.138,154.759,444.138,154.759z"
+    />
+  </svg>
+
+
+</div>
